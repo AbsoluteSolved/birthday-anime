@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お誕生日おめでとう 🎌  С Днём Рождения милая моя звездочка!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="sakura"></canvas>
+
+    <div class="stars" id="stars"></div>
+
+    <div class="anime-character">
+        <img src="anime.png" alt="Аниме-персонаж" class="character-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="character-emoji">🌸 (◕‿◕)🌸 </div>
+    </div>
+
+    <div class="container">
+        <div class="jp-title">お誕生日おめでとう</div>
+        <h1 class="title">С Днём Рождения милая моя звездочка!</h1>
+        <div class="divider">✿ ─────── ✿</div>
+
+        <p class="message">Пусть твое 20-ие будет легка, без тягот, без горя и усталости</p>
+        <p class="message accent">СЫРДА, МИЧЭЭР УОННА ТОРОБУТ КУНУНЭН! ✨ </p>
+
+        <div class="gallery-section">
+            <h2 class="gallery-title">📸  Наши лучшие моменты</h2>
+            <div class="gallery" id="gallery">
+            </div>
+        </div>
+
+        <div class="wishes-grid">
+            <div class="wish-card">🌸 <span>ЫАРАХАНА СУОХ</span></div>
+            <div class="wish-card">⭐ <span>СИТИЬИНИ</span></div>
+            <div class="wish-card">💖 <span>ТАПТЫБЫН</span></div>
+            <div class="wish-card">🎌 <span>ЭЛЬБЭХ ДО5ОРУ</span></div>
+        </div>
+
+        <button class="btn" onclick="celebrate()">✨  お祝い — Поздравить! ✨ </button>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">✕</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Фото">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
